@@ -1,0 +1,16 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="API Smoke Suite" verbose="1" parallel="tests" thread-count="2">
+    <groups>
+        <run>
+            <include name="smoke"/>
+        </run>
+    </groups>
+
+    <test name="Weather">
+        <classes>
+            <class name="org.example.openweather.OpenWeatherApacheTest"/>
+            <class name="org.example.openweather.OpenWeatherRestAssuredTests"/>
+        </classes>
+    </test>
+</suite>

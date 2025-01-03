@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="UI Smoke Suite" verbose="1" parallel="tests" thread-count="2">
+    <groups>
+        <run>
+            <include name="smoke"/>
+        </run>
+    </groups>
+
+    <test name="Weather">
+        <classes>
+            <class name="org.example.openweather.OffersTest"/>
+        </classes>
+    </test>
+</suite>
