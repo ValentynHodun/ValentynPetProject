@@ -1,0 +1,9 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="UI Regression Suite" verbose="1" parallel="tests" thread-count="2">
+    <test name="Weather">
+        <classes>
+            <class name="org.example.openweather.OffersTest"/>
+        </classes>
+    </test>
+</suite>
