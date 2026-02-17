@@ -13,6 +13,8 @@
     <modules>
         <module>api-testing</module>
         <module>ui-testing</module>
+        <module>swagger</module>
+        <module>performance-testing</module>
     </modules>
 
     <properties>
@@ -24,9 +26,15 @@
         <allure.version>2.18.1</allure.version>
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
     <dependencies>
+        <dependency>
+            <groupId>org.apache.httpcomponents</groupId>
+            <artifactId>httpclient</artifactId>
+            <version>4.5.14</version>
+        </dependency>
         <dependency>
             <groupId>org.testng</groupId>
             <artifactId>testng</artifactId>
@@ -35,7 +43,7 @@
         <dependency>
             <groupId>org.assertj</groupId>
             <artifactId>assertj-core</artifactId>
-            <version>3.21.0</version>
+            <version>3.26.3</version>
         </dependency>
         <dependency>
             <groupId>io.qameta.allure</groupId>
@@ -60,7 +68,7 @@
         <dependency>
             <groupId>org.apache.commons</groupId>
             <artifactId>commons-lang3</artifactId>
-            <version>3.9</version>
+            <version>3.17.0</version>
         </dependency>
         <dependency>
             <groupId>org.springframework</groupId>
